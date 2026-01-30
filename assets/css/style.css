@@ -1,0 +1,272 @@
+/* Style principal du portfolio de Souleymane Tall */
+
+body {
+    margin: 0;
+    font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(120deg, #f7f8fa 60%, #e9e4f0 100%);
+    color: #222;
+    min-height: 100vh;
+}
+
+header {
+    background: linear-gradient(90deg, #232526 0%, #414345 100%);
+    color: #fff;
+    box-shadow: 0 4px 24px rgba(44, 62, 80, 0.13);
+    padding: 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+nav {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 2rem;
+}
+/* Titre du site dans le header */
+.site-title {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: #ffd700;
+    letter-spacing: 1px;
+    margin-right: 2.5rem;
+    text-shadow: 0 2px 8px #ffd70033, 0 1px 0 #232526;
+    font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+    white-space: nowrap;
+    transition: color 0.2s, text-shadow 0.2s;
+}
+.site-title:hover {
+    color: #fff;
+    text-shadow: 0 4px 16px #ffd70077, 0 1px 0 #232526;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2.5rem;
+    margin: 0;
+    padding: 0;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.08rem;
+    letter-spacing: 0.5px;
+    position: relative;
+    padding: 0.3rem 0.7rem;
+    border-radius: 8px;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+nav a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #ffd700;
+    transition: width 0.3s;
+    margin-top: 2px;
+}
+nav a:hover, nav a:focus {
+    background: #ffd70022;
+    color: #ffd700;
+    box-shadow: 0 2px 8px #ffd70033;
+}
+nav a:hover::after, nav a:focus::after {
+    width: 100%;
+}
+
+main {
+    max-width: 950px;
+    margin: 2.5rem auto 2rem auto;
+    padding: 2.5rem 2rem;
+    background: #fff;
+    border-radius: 22px;
+    box-shadow: 0 8px 32px rgba(44, 62, 80, 0.13);
+}
+
+.hero {
+    text-align: center;
+    padding: 2.5rem 0 2rem 0;
+}
+.profile-img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1.2rem;
+    border: 5px solid #ffd700;
+    box-shadow: 0 4px 24px #ffd70033;
+    background: #fff;
+}
+.hero-buttons {
+    margin-top: 2rem;
+}
+.btn {
+    background: linear-gradient(90deg, #232526 0%, #414345 100%);
+    color: #fff;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 24px;
+    font-size: 1.08rem;
+    font-weight: 700;
+    margin: 0 0.7rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.15s;
+    box-shadow: 0 2px 12px rgba(44, 62, 80, 0.13);
+    letter-spacing: 0.5px;
+}
+.btn:hover, .btn:focus {
+    background: linear-gradient(90deg, #ffd700 0%, #ffec80 100%);
+    color: #232526;
+    box-shadow: 0 4px 24px #ffd70055;
+    transform: translateY(-2px) scale(1.04);
+}
+.btn-secondary {
+    background: #fff;
+    color: #232526;
+    border: 2px solid #ffd700;
+}
+.btn-secondary:hover, .btn-secondary:focus {
+    background: #ffd700;
+    color: #232526;
+}
+
+section {
+    margin-bottom: 2.2rem;
+}
+
+.tech-list, .services-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.1rem;
+    padding: 0;
+    list-style: none;
+}
+.tech-list li, .services-list li {
+    background: linear-gradient(90deg, #e9e4f0 0%, #f7f8fa 100%);
+    color: #232526;
+    padding: 0.6rem 1.2rem;
+    border-radius: 16px;
+    font-weight: 600;
+    box-shadow: 0 2px 8px #e9e4f033;
+    border: 1px solid #ffd70033;
+}
+
+.project-card {
+    background: linear-gradient(90deg, #f7f8fa 60%, #e9e4f0 100%);
+    border: 1.5px solid #ffd70033;
+    border-radius: 16px;
+    padding: 2rem 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 24px #ffd70011;
+    transition: box-shadow 0.2s, transform 0.15s;
+}
+.project-card:hover {
+    box-shadow: 0 8px 32px #ffd70033;
+    transform: translateY(-2px) scale(1.01);
+}
+.project-card h2 {
+    margin-top: 0;
+}
+.project-card a {
+    color: #232526;
+    text-decoration: underline;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+.project-card a:hover {
+    color: #ffd700;
+}
+
+.contact-links {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.contact-links a {
+    color: #232526;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s, text-shadow 0.2s;
+}
+.contact-links a:hover {
+    color: #ffd700;
+    text-shadow: 0 2px 8px #ffd70033;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-top: 1.2rem;
+}
+input, textarea {
+    padding: 0.8rem;
+    border: 1.5px solid #ffd70033;
+    border-radius: 10px;
+    font-size: 1.05rem;
+    font-family: inherit;
+    background: #f7f8fa;
+    transition: border 0.2s, box-shadow 0.2s;
+}
+input:focus, textarea:focus {
+    outline: none;
+    border: 2px solid #ffd700;
+    box-shadow: 0 2px 8px #ffd70033;
+}
+
+footer {
+    background: linear-gradient(90deg, #232526 0%, #414345 100%);
+    color: #ffd700;
+    text-align: center;
+    padding: 2rem 0 1rem 0;
+    font-size: 1.08rem;
+    letter-spacing: 0.5px;
+    border-top-left-radius: 22px;
+    border-top-right-radius: 22px;
+    box-shadow: 0 -4px 24px #ffd70022;
+    margin-top: 3rem;
+}
+
+@media (max-width: 900px) {
+    main {
+        padding: 1.2rem;
+    }
+    nav {
+        padding: 0.5rem 1rem;
+    }
+    nav ul {
+        gap: 1.2rem;
+    }
+    .project-card {
+        padding: 1.2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        gap: 0.5rem;
+        flex-wrap: wrap;
+    }
+    .hero {
+        padding: 1.2rem 0 1rem 0;
+    }
+    .profile-img {
+        width: 90px;
+        height: 90px;
+    }
+    main {
+        padding: 0.5rem;
+    }
+    .project-card {
+        padding: 0.7rem;
+    }
+    footer {
+        font-size: 0.98rem;
+        padding: 1.2rem 0 0.5rem 0;
+    }
+}
